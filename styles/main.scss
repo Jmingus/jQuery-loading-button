@@ -1,0 +1,29 @@
+@import 'kube';
+
+body{
+  padding-top: 4em;
+}
+
+#loading-button{
+  height: 6em;
+  width: 22em;
+  font-size: 1em;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  border: 1px solid #de2c3b;
+  line-height: 6em;
+  cursor: pointer;
+
+  #background{
+    @extend #loading-button;
+    border: none;
+    height: 6em;
+    width: 0;
+    background-color: #de2c3b;
+  }
+  .text{
+    color: black;
+    position: relative;
+    top: -6em;}
+}
